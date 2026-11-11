@@ -1,0 +1,1115 @@
+!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfólio |Roger Miguel Rodrigues Souza</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  :root { --primary: #e0e5ec; }
+  html { scroll-behavior: smooth; }
+  body { padding-top: 0; }
+  section { scroll-margin-top: 80px; }
+ 
+  .hero-section { min-height: 100vh; background: linear-gradient(135deg,#f5f7fa 0%,#e4ecf7 100%); }
+  .profile-img { width: 220px; height: 220px; object-fit: cover; border-radius: 50%; border: 5px solid #fff; }
+ 
+  .navbar .nav-link:hover { color: #ffd166 !important; }
+ 
+  .card { border-radius: 14px; transition: transform .25s ease, box-shadow .25s ease; }
+  .trend-card:hover, .project-card:hover { transform: translateY(-6px); box-shadow: 0 10px 24px rgba(0,0,0,.12) !important; }
+ 
+  #contactForm .form-control:focus { border-color: var(--primary); box-shadow: 0 0 0 .2rem rgba(13,110,253,.25); }
+ 
+  .table td { vertical-align: middle; max-width: 320px; overflow-wrap: anywhere; }
+ 
+  #adminArea { display: none; }
+  #adminArea.active { display: block; }
+ 
+  @media (max-width: 768px) {
+    .hero-section { min-height: auto; padding: 100px 0 40px; }
+    .profile-img { width: 160px; height: 160px; }
+    .display-5 { font-size: 2rem; }
+  }
+</style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80">
+ 
+<!-- ================= NAVBAR ================= -->
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#home">Meu Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Áreas do Conhecimento</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#humanas">Ciências Humanas</a></li>
+            <li><a class="dropdown-item" href="#natureza">Ciências da Natureza</a></li>
+            <li><a class="dropdown-item" href="#matematica">Matemática</a></li>
+            <li><a class="dropdown-item" href="#linguagens">Linguagens</a></li>
+        </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Tendências</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#ciberseguranca">Cibersegurança</a></li>
+            <li><a class="dropdown-item" href="#blockchain">Blockchain</a></li>
+            <li><a class="dropdown-item" href="#automacao">Automação/Robótica</a></li>
+            <li><a class="dropdown-item" href="#edge">Edge Computing</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ 
+<!-- ================= APRESENTAÇÃO ================= -->
+<section id="home" class="hero-section d-flex align-items-center">
+  <div class="container py-5">
+    <div class="row align-items-center g-4">
+      <div class="col-md-4 text-center">
+        <img src="https://s11.aconvert.com/convert/p3r68-cdx67/e73rt-xdbmw.jpg" alt="Foto de perfil" class="profile-img shadow">
+      </div>
+      <div class="col-md-8">
+        <h1 class="display-5 fw-bold">Roger Miguel Rodrigues Souza</h1>
+        <p class="lead text-muted"> Portfólio 4º Bimestre</p>
+        <p> Meu nome é Roger Miguel Rodrigues Souza
+
+Sou estudante do Ensino Médio Técnico em Tecnologia da Informação pelo Senac, apaixonado por tecnologia, inovação e resolução de problemas. Atualmente, trabalho na SegLife Serviços como Jovem Aprendiz, onde tenho a oportunidade de desenvolver meus conhecimentos na prática, atuando com suporte técnico e sistemas de segurança eletrônica.
+
+No meu dia a dia, tenho contato com sistemas de monitoramento por câmeras, controle de acesso, reconhecimento facial e atendimento de chamados técnicos. Também utilizo ferramentas como AnyDesk e sistemas de gerenciamento, adquirindo experiência com equipamentos e tecnologias de diferentes fabricantes, como Intelbras e Control iD.
+
+Durante minha formação, venho desenvolvendo habilidades em programação, desenvolvimento web, banco de dados, redes de computadores, hardware e software.
+
+Sou uma pessoa comunicativa, organizada, dedicada e com facilidade para aprender coisas novas. Gosto de trabalhar em equipe, enfrentar desafios e buscar soluções para problemas.
+
+Meu objetivo é continuar evoluindo profissionalmente na área de Tecnologia da Informação, ampliando meus conhecimentos e conquistando novas oportunidades, principalmente nas áreas de Suporte Técnico e Desenvolvimento de Sistemas.</p>
+        <div class="row mt-4">
+          <div class="col-sm-6">
+            <h5><i class="bi bi-cpu"></i> Hard Skills</h5>
+            <ul class="list-unstyled">
+              <li> HTML5 e CSS3</li>
+              <li> JavaScript (básico)</li>
+              <li> Lógica de programação</li>
+              <li> Banco de dados SQL</li>
+              <li> Redes de computadores</li>
+              <li>Hardware e manutenção de computadores</li>
+              <li> Suporte técnico e acesso remoto (AnyDesk)</li>
+              <li> Sistemas de CFTV e monitoramento</li>
+              <li> Controle de acesso e reconhecimento facial</li>
+              <li> GitHub</li>
+              <li>Pacote Office</li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <h5><i class="bi bi-people"></i> Soft Skills</h5>
+            <ul class="list-unstyled">
+              <li> Comunicação</li>
+              <li> Trabalho em equipe</li>
+              <li> Facilidade para aprender</li>
+              <li> Organização</li>
+              <li>Proatividade</li>
+                <li> Dedicação</li>
+              <li> Vontade de aprender coisas novas</li>
+            </ul>
+          </div>
+        </div>
+        <a href="#contato" class="btn btn-primary mt-3"><i class="bi bi-envelope"></i> Fale comigo</a>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ================= ÁREAS DO CONHECIMENTO ================= -->
+<section id="areas" class="py-5 bg-light">
+  <div class="container">
+
+    <h2 class="text-center mb-5 fw-bold">Áreas do Conhecimento</h2>
+
+    <!-- CIÊNCIAS HUMANAS -->
+    <div id="humanas" class="card mb-4 shadow-sm">
+      <div class="card-body">
+        <h4 class="card-title">Ciências Humanas</h4>
+
+        <p class="card-text">
+          As Ciências Humanas envolvem matérias como História, Geografia,
+          Filosofia e Sociologia. Por meio delas, aprendemos a entender
+          a sociedade, a cultura, os acontecimentos históricos e o
+          comportamento das pessoas.
+        </p>
+
+        <p class="text-muted small">
+          <strong>Contribuição para a TI:</strong>
+          ajudam a desenvolver o pensamento crítico, a comunicação e a
+          capacidade de entender as necessidades das pessoas que utilizam
+          sistemas e tecnologias.
+        </p>
+      </div>
+    </div>
+
+    <!-- CIÊNCIAS DA NATUREZA -->
+    <div id="natureza" class="card mb-4 shadow-sm">
+      <div class="card-body">
+        <h4 class="card-title">Ciências da Natureza</h4>
+
+        <p class="card-text">
+          No Ensino Médio, as Ciências da Natureza incluem Biologia,
+          Física e Química. Essas matérias nos ajudam a compreender
+          como funciona o mundo ao nosso redor, estudando os seres vivos,
+          a energia, a matéria e os fenômenos naturais.
+        </p>
+
+        <p class="text-muted small">
+          <strong>Contribuição para a TI:</strong>
+          ajudam no raciocínio lógico, na análise de problemas e na
+          compreensão de como os equipamentos e componentes tecnológicos
+          funcionam.
+        </p>
+      </div>
+    </div>
+
+    <!-- MATEMÁTICA -->
+    <div id="matematica" class="card mb-4 shadow-sm">
+      <div class="card-body">
+        <h4 class="card-title">Matemática</h4>
+
+        <p class="card-text">
+          A Matemática desenvolve o raciocínio lógico por meio de cálculos,
+          fórmulas, gráficos, porcentagens e resolução de problemas.
+          É uma matéria que exige atenção, organização e pensamento estratégico.
+        </p>
+
+        <p class="text-muted small">
+          <strong>Contribuição para a TI:</strong>
+          está diretamente ligada à lógica de programação, aos algoritmos,
+          aos cálculos utilizados nos sistemas e à resolução de erros no código.
+        </p>
+      </div>
+    </div>
+
+    <!-- LINGUAGENS -->
+    <div id="linguagens" class="card mb-4 shadow-sm">
+      <div class="card-body">
+        <h4 class="card-title">Linguagens e suas Tecnologias</h4>
+
+        <p class="card-text">
+          A área de Linguagens reúne Língua Portuguesa, Inglês, Artes e
+          Educação Física. Ela trabalha a comunicação, a interpretação de
+          textos, a criatividade e a expressão de ideias em diferentes situações.
+        </p>
+
+        <p class="text-muted small">
+          <strong>Contribuição para a TI:</strong>
+          melhora a comunicação com clientes e equipes, ajuda na interpretação
+          de documentações técnicas e facilita a compreensão de conteúdos
+          de programação, que muitas vezes estão em inglês.
+        </p>
+      </div>
+    </div>
+
+    <!-- PROJETO DO ANO -->
+    <div id="projeto-ano" class="card mb-4 shadow-sm">
+      <div class="card-body">
+        <h4 class="card-title">Projeto do Ano</h4>
+
+        <p class="card-text">
+          O Projeto do Ano é uma atividade em que trabalhamos no desenvolvimento
+          de um projeto ao longo do ano letivo. Durante esse processo, colocamos
+          em prática o que aprendemos, pesquisamos informações, trocamos ideias
+          e buscamos soluções para os desafios encontrados.
+          É uma oportunidade de desenvolver conhecimentos, trabalhar em equipe
+          e aprender a transformar ideias em algo concreto.
+        </p>
+
+        <p class="text-muted small">
+          <strong>Contribuição para a TI:</strong>
+          desenvolve a criatividade, o trabalho em equipe, a organização
+          e a capacidade de planejar e executar projetos.
+        </p>
+      </div>
+    </div>
+
+    <!-- PROJETO DE VIDA -->
+    <div id="projeto-vida" class="card mb-4 shadow-sm">
+      <div class="card-body">
+        <h4 class="card-title">Projeto de Vida</h4>
+
+        <p class="card-text">
+          O Projeto de Vida é uma matéria que me ajuda a pensar no meu futuro,
+          conhecer melhor minhas habilidades e entender quais caminhos quero
+          seguir. Tenho interesse em continuar crescendo na área de Tecnologia
+          da Informação, adquirindo experiência e aprendendo coisas novas.
+        </p>
+
+        <p class="text-muted small">
+          <strong>Contribuição para a TI:</strong>
+          ajuda a desenvolver responsabilidade, organização e planejamento,
+          além de trazer mais clareza sobre meus objetivos pessoais e profissionais.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- =========<!-- ================= TENDÊNCIAS TECNOLÓGICAS ================= -->
+<section id="tendencias" class="py-5">
+  <div class="container">
+
+    <h2 class="text-center mb-5 fw-bold">Tendências Tecnológicas</h2>
+
+    <div class="row g-4">
+
+      <!-- CIBERSEGURANÇA -->
+      <div class="col-md-6" id="ciberseguranca">
+        <div class="card h-100 shadow-sm border-0 trend-card">
+          <div class="card-body">
+
+            <h4>Cibersegurança</h4>
+
+            <p>
+              A cibersegurança é responsável por proteger computadores,
+              sistemas, redes e informações contra ataques e invasões.
+              Ela é muito importante porque cada vez mais pessoas e empresas
+              utilizam a internet para armazenar dados e realizar atividades.
+              Na área de TI, é necessário ter cuidado com senhas, acessos
+              e informações dos usuários.
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- BLOCKCHAIN -->
+      <div class="col-md-6" id="blockchain">
+        <div class="card h-100 shadow-sm border-0 trend-card">
+          <div class="card-body">
+
+            <h4>Blockchain</h4>
+
+            <p>
+              Blockchain é uma tecnologia utilizada para registrar informações
+              de forma segura e organizada. Ela ficou conhecida por ser usada
+              nas criptomoedas, mas também pode ser aplicada em outras áreas,
+              como contratos digitais, armazenamento de registros e
+              rastreamento de produtos.
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- AUTOMAÇÃO E ROBÓTICA -->
+      <div class="col-md-6" id="automacao">
+        <div class="card h-100 shadow-sm border-0 trend-card">
+          <div class="card-body">
+
+            <h4>Automação e Robótica</h4>
+
+            <p>
+              A automação e a robótica utilizam máquinas, equipamentos
+              e programas para realizar tarefas de forma automática,
+              reduzindo o trabalho manual. Essa tecnologia está presente
+              em indústrias, empresas e até em atividades do nosso dia a dia,
+              ajudando a economizar tempo e facilitar processos.
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- EDGE COMPUTING -->
+      <div class="col-md-6" id="edge">
+        <div class="card h-100 shadow-sm border-0 trend-card">
+          <div class="card-body">
+
+            <h4>Edge Computing</h4>
+
+            <p>
+              Edge Computing é uma tecnologia que permite processar informações
+              mais perto de onde elas são geradas, sem precisar enviar todos
+              os dados para um servidor distante. Isso ajuda a deixar as
+              respostas mais rápidas e é bastante utilizado em câmeras
+              inteligentes, dispositivos conectados e sistemas de monitoramento.
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+ 
+<!-- ================= PROJETOS ================= -->
+<<section id="projetos" class="container py-5">
+  <h2 class="text-center mb-5">Galeria de Projetos</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.tYN85Q70ksQ101Sg-8vftAHaD4?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Projeto 1">
+        <div class="card-body">
+          <h5 class="card-title">Challenge - 1º Bimestre / Radiação</h5>
+          <p class="card-text">Criação de um Jogo No contruct 3.<div></div>
+         Corrida Saudavel!
+          </p>
+          <a href="https://github.com/rogermiguelsouza08-jpg/Challenge---1Bimestre---ODS3--Radiacao" class="btn btn-dark btn-sm" target="_blank">Ver repositório</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="https://th.bing.com/th/id/R.649b99fc2a7a6f76f5aa12a93a9568ca?rik=b4TSHhZyMN0ZJQ&pid=ImgRaw&r=0" class="card-img-top" alt="Projeto 2">
+        <div class="card-body">
+          <h5 class="card-title"> Minha Loja Virtual de Pesca </h5>
+          <p class="card-text">Loja Virtual especializada na venda de produtos de pescas, com uma interface simples e intuitiva, desenvolvida para facilitar a navegação e a escolha dos produtos.</p>
+          <a href="https://github.com/rogermiguelsouza08-jpg/RogerLojaVirtual" class="btn btn-dark btn-sm" target="_blank">Ver repositório</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWq93jp57e_t5TKSBcjbjM2DbdqpWzxa2XDNJfKyZsWQ&s=10" class="card-img-top" alt="Projeto 3">
+        <div class="card-body">
+          <h5 class="card-title">Challenge - 3º Bimestre</h5>
+          <p class="card-text">O Trabalho teve como intuito de capturar o dicionário de alterações e iterar sobre ele para executar os comandos UPDATE ou DELETE no banco de dados de forma silenciosa e eficiente.</p>
+          <a href="https://github.com/rogermiguelsouza08-jpg/Challenge---3-Bimestre" class="btn btn-dark btn-sm" target="_blank">Ver repositório</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.LXS0CuDjFaMYjouI27jWrwHaEo?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Projeto 4">
+        <div class="card-body">
+          <h5 class="card-title">Atividade Aula 4 / 4 Bimestre</h5>
+          <p class="card-text">Aprendendo a Como Usar index.Html e dumbbell.png.</p>
+          <a href="https://github.com/rogermiguelsouza08-jpg/Aula-4/blob/main/index.html" class="btn btn-dark btn-sm" target="_blank">Ver repositório</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.NqQovmhWSC4JS-BA3j-4cgHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Projeto 5">
+        <div class="card-body">
+          <h5 class="card-title">Challenge-2-Bimestre - KANBAN</h5>
+          <p class="card-text">Criação do site para o meu cliente Miltinho.</p>
+          <a href="https://github.com/rogermiguelsouza08-jpg/Challenge-2-Bimestre---KANBAN" class="btn btn-dark btn-sm" target="_blank">Ver repositório</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.7wA5XEIHopd6NIB-J7NKKwHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Projeto 6">
+        <div class="card-body">
+          <h5 class="card-title">Geslife IA </h5>
+          <p class="card-text">Criação de IA para Portaria Virtual e controlador de acesso.</p>
+          <a href="https://github.com/rogermiguelsouza08-jpg/Geslife-IA-" class="btn btn-dark btn-sm" target="_blank">Ver repositório</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ================= CONTATO ================= -->
+<section id="contato" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4 fw-bold">Contato</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <form id="contactForm" class="card shadow-sm p-4 border-0" novalidate>
+          <div class="mb-3">
+            <label for="name" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="name" required minlength="3">
+            <div class="invalid-feedback">Informe seu nome (mín. 3 caracteres).</div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" required>
+            <div class="invalid-feedback">Informe um e-mail válido.</div>
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label">Assunto</label>
+            <input type="text" class="form-control" id="subject" required minlength="3">
+            <div class="invalid-feedback">Informe um assunto.</div>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Mensagem</label>
+            <textarea class="form-control" id="message" rows="4" required minlength="10"></textarea>
+            <div class="invalid-feedback">Escreva uma mensagem (mín. 10 caracteres).</div>
+          </div>
+          <button type="submit" class="btn btn-primary w-100"><i class="bi bi-send"></i> Enviar mensagem</button>
+          <div id="formFeedback" class="mt-3"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ================= ÁREA ADMINISTRATIVA OCULTA ================= -->
+<section id="adminArea" class="py-5 bg-white">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
+      <h3 class="mb-0"><i class="bi bi-shield-lock"></i> Painel Administrativo</h3>
+      <div class="d-flex gap-2 flex-wrap">
+        <div class="input-group" style="max-width:280px;">
+          <span class="input-group-text"><i class="bi bi-search"></i></span>
+          <input type="text" id="searchInput" class="form-control" placeholder="Buscar...">
+        </div>
+        <button class="btn btn-outline-secondary" id="logoutBtn"><i class="bi bi-box-arrow-right"></i> Sair</button>
+        <a href="#home" class="btn btn-outline-dark"><i class="bi bi-arrow-left"></i> Voltar ao site</a>
+      </div>
+    </div>
+ 
+    <div class="card shadow-sm border-0">
+      <div class="card-body p-0">
+        <div class="table-responsive">
+          <table class="table table-hover align-middle mb-0">
+            <thead class="table-dark">
+              <tr>
+                <th>#</th><th>Nome</th><th>E-mail</th><th>Assunto</th>
+                <th>Mensagem</th><th>Data</th><th class="text-center">Ações</th>
+              </tr>
+            </thead>
+            <tbody id="messagesTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card-footer d-flex justify-content-between align-items-center">
+        <small class="text-muted" id="counterInfo">0 mensagens</small>
+        <button class="btn btn-sm btn-danger" id="clearAllBtn"><i class="bi bi-trash"></i> Limpar todas</button>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<footer class="bg-dark text-white text-center py-3">
+  <small id="footerCopyright">&copy; 2025 — Roger Miguel Rodrigues Souza| HTML5, CSS3, JS e Bootstrap</small>
+</footer>
+ 
+<!-- ================= MODAL LOGIN ADMIN ================= -->
+<div class="modal fade" id="adminModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title"><i class="bi bi-shield-lock"></i> Acesso Administrativo</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p class="small text-muted">Área restrita. Informe a senha para gerenciar as mensagens recebidas.</p>
+        <input type="password" id="adminPassword" class="form-control mb-2" placeholder="Senha">
+        <div id="adminError" class="text-danger small"></div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button class="btn btn-primary" id="adminLoginBtn">Entrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- ================= MODAL EDIÇÃO ================= -->
+<div class="modal fade" id="editModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title"><i class="bi bi-pencil-square"></i> Editar mensagem</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <input type="hidden" id="editId">
+        <div class="mb-2"><label class="form-label">Nome</label><input type="text" id="editName" class="form-control"></div>
+        <div class="mb-2"><label class="form-label">E-mail</label><input type="email" id="editEmail" class="form-control"></div>
+        <div class="mb-2"><label class="form-label">Assunto</label><input type="text" id="editSubject" class="form-control"></div>
+        <div class="mb-2"><label class="form-label">Mensagem</label><textarea id="editMessage" class="form-control" rows="4"></textarea></div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button class="btn btn-primary" id="saveEditBtn">Salvar alterações</button>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+/* 
+/* ============================================================
+   MÓDULO STORAGE (LocalStorage + JSON) — CRUD + Seed 20 registros
+   ============================================================ */
+
+const StorageApp = (() => {
+  const KEY = 'canes_portfolio_messages_v1';
+  const INIT_KEY = KEY + '_inicializado';
+
+  const read = () => {
+    try {
+      const raw = localStorage.getItem(KEY);
+      return raw ? JSON.parse(raw) : [];
+    } catch (e) {
+      console.error('Erro ao ler LocalStorage:', e);
+      return [];
+    }
+  };
+
+  const write = (arr) => {
+    localStorage.setItem(KEY, JSON.stringify(arr));
+  };
+
+  // Cria 20 registros de teste somente no primeiro acesso.
+  const seedIfEmpty = () => {
+    if (localStorage.getItem(INIT_KEY) === '1') return;
+
+    if (read().length === 0) {
+      const nomes = [
+        'Ana', 'Bruno', 'Carla', 'Diego', 'Elisa',
+        'Felipe', 'Gabriela', 'Heitor', 'Isabela', 'João'
+      ];
+
+      const sobrenomes = [
+        'Silva', 'Souza', 'Oliveira', 'Pereira', 'Lima'
+      ];
+
+      const assuntos = [
+        'Dúvida', 'Proposta', 'Feedback', 'Parceria',
+        'Suporte', 'Projeto Freelance', 'Orçamento', 'Colaboração'
+      ];
+
+      const mensagens = [
+        'Gostei muito do seu portfólio, parabéns!',
+        'Podemos conversar sobre um projeto?',
+        'Seu trabalho é muito interessante.',
+        'Gostaria de propor uma parceria.',
+        'Como você implementou o LocalStorage?',
+        'Adorei o design responsivo.',
+        'Você tem disponibilidade para freelance?',
+        'Parabéns pelo capricho no código!',
+        'Fiquei interessado na sua abordagem de automação.',
+        'Podemos marcar uma call?'
+      ];
+
+      const seed = [];
+
+      for (let i = 0; i < 20; i++) {
+        const nome =
+          nomes[i % nomes.length] + ' ' +
+          sobrenomes[i % sobrenomes.length];
+
+        seed.push({
+          id: Date.now() + i,
+          name: nome,
+          email: `${nome.split(' ')[0].toLowerCase()}${i}@exemplo.com`,
+          subject: assuntos[i % assuntos.length],
+          message: mensagens[i % mensagens.length],
+          date: new Date(Date.now() - i * 86400000).toISOString()
+        });
+      }
+
+      write(seed);
+    }
+
+    // Marca que a inicialização já aconteceu.
+    localStorage.setItem(INIT_KEY, '1');
+  };
+
+  const create = (payload) => {
+    const arr = read();
+
+    const novo = {
+      id: Date.now(),
+      name: payload.name.trim(),
+      email: payload.email.trim(),
+      subject: payload.subject.trim(),
+      message: payload.message.trim(),
+      date: new Date().toISOString()
+    };
+
+    arr.unshift(novo);
+    write(arr);
+
+    return novo;
+  };
+
+  const update = (id, payload) => {
+    const arr = read();
+    const i = arr.findIndex(m => m.id === id);
+
+    if (i === -1) return null;
+
+    arr[i] = {
+      ...arr[i],
+      name: payload.name.trim(),
+      email: payload.email.trim(),
+      subject: payload.subject.trim(),
+      message: payload.message.trim()
+    };
+
+    write(arr);
+    return arr[i];
+  };
+
+  const remove = (id) => {
+    write(read().filter(m => m.id !== id));
+  };
+
+  const removeAll = () => {
+    localStorage.removeItem(KEY);
+  };
+
+  return {
+    read,
+    write,
+    seedIfEmpty,
+    create,
+    update,
+    remove,
+    removeAll,
+    KEY
+  };
+})();
+
+StorageApp.seedIfEmpty();
+
+
+/* ============================================================
+   FRONTEND — Formulário + Automação + Acesso Admin
+   ============================================================ */
+
+(function () {
+
+  const SENHA_ADMIN = 'canes2025';
+
+  // E-mail pessoal configurado para receber as mensagens.
+  const FORM_SUBMIT_URL =
+    'https://formsubmit.co/ajax/rogermiguelsouza08@gmail.com';
+
+  const form = document.getElementById('contactForm');
+  const feedback = document.getElementById('formFeedback');
+
+  /* ------------------------------------------------------------
+     ENVIO DO FORMULÁRIO DE CONTATO
+     ------------------------------------------------------------ */
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    if (!form.checkValidity()) {
+      form.classList.add('was-validated');
+      return;
+    }
+
+    const payload = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      subject: document.getElementById('subject').value,
+      message: document.getElementById('message').value
+    };
+
+    // Salva a mensagem no LocalStorage.
+    StorageApp.create(payload);
+
+    feedback.innerHTML =
+      '<div class="alert alert-info">Enviando sua mensagem...</div>';
+
+    try {
+      const resposta = await fetch(FORM_SUBMIT_URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          _subject: `[Portfólio Roger Miguel] ${payload.subject}`,
+          _template: 'table',
+          _captcha: 'false',
+          Nome: payload.name,
+          Email: payload.email,
+          Assunto: payload.subject,
+          Mensagem: payload.message
+        })
+      });
+
+      const resultado = await resposta.json();
+
+      if (
+        !resposta.ok ||
+        resultado.success === false ||
+        resultado.success === 'false'
+      ) {
+        throw new Error('Não foi possível enviar o e-mail.');
+      }
+
+      feedback.innerHTML = `
+        <div class="alert alert-success">
+          <i class="bi bi-check-circle"></i>
+          Mensagem enviada com sucesso! Obrigado pelo contato.
+        </div>
+      `;
+
+    } catch (err) {
+      console.warn('Falha no envio remoto:', err);
+
+      feedback.innerHTML = `
+        <div class="alert alert-warning">
+          <i class="bi bi-exclamation-triangle"></i>
+          Sua mensagem foi salva no portfólio, mas não foi possível
+          confirmar o envio do e-mail. Tente novamente mais tarde.
+        </div>
+      `;
+    }
+
+    form.reset();
+    form.classList.remove('was-validated');
+  });
+
+
+  /* ------------------------------------------------------------
+     ACESSO AO PAINEL ADMINISTRATIVO
+     ------------------------------------------------------------ */
+
+  const adminModal = new bootstrap.Modal(
+    document.getElementById('adminModal')
+  );
+
+  const adminArea = document.getElementById('adminArea');
+
+  function abrirAdmin() {
+    document.getElementById('adminPassword').value = '';
+    document.getElementById('adminError').textContent = '';
+    adminModal.show();
+  }
+
+  // Atalho: Ctrl + Shift + A
+  document.addEventListener('keydown', (e) => {
+    if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'a') {
+      e.preventDefault();
+      abrirAdmin();
+    }
+  });
+
+  // Cinco cliques no copyright também abrem o painel.
+  const copy = document.getElementById('footerCopyright');
+
+  copy.style.cursor = 'pointer';
+
+  let clicks = 0;
+  let timer = null;
+
+  copy.addEventListener('click', () => {
+    clicks++;
+
+    clearTimeout(timer);
+
+    timer = setTimeout(() => {
+      clicks = 0;
+    }, 1500);
+
+    if (clicks >= 5) {
+      clicks = 0;
+      abrirAdmin();
+    }
+  });
+
+
+  /* ------------------------------------------------------------
+     LOGIN DO ADMINISTRADOR
+     ------------------------------------------------------------ */
+
+  document.getElementById('adminLoginBtn').addEventListener('click', () => {
+
+    const senha = document.getElementById('adminPassword').value;
+
+    if (senha === SENHA_ADMIN) {
+
+      sessionStorage.setItem('admin_auth', '1');
+
+      adminModal.hide();
+
+      document.getElementById('navbar').style.display = 'none';
+
+      document.querySelectorAll('section:not(#adminArea)')
+        .forEach(s => s.style.display = 'none');
+
+      document.querySelector('footer').style.display = 'none';
+
+      adminArea.classList.add('active');
+
+      renderAdmin();
+
+      window.scrollTo({ top: 0 });
+
+    } else {
+
+      document.getElementById('adminError').textContent =
+        'Senha incorreta. Tente novamente.';
+
+    }
+  });
+
+  document.getElementById('adminPassword')
+    .addEventListener('keypress', (e) => {
+
+      if (e.key === 'Enter') {
+        document.getElementById('adminLoginBtn').click();
+      }
+
+    });
+
+
+  /* ------------------------------------------------------------
+     SAIR DO PAINEL ADMINISTRATIVO
+     ------------------------------------------------------------ */
+
+  document.getElementById('logoutBtn').addEventListener('click', () => {
+
+    sessionStorage.removeItem('admin_auth');
+
+    location.reload();
+
+  });
+
+
+  /* ------------------------------------------------------------
+     ELEMENTOS DA TABELA ADMINISTRATIVA
+     ------------------------------------------------------------ */
+
+  const tbody = document.getElementById('messagesTableBody');
+  const counter = document.getElementById('counterInfo');
+  const searchInput = document.getElementById('searchInput');
+
+  const editModal = new bootstrap.Modal(
+    document.getElementById('editModal')
+  );
+
+
+  // Proteção para exibir textos sem interpretar HTML.
+  const esc = (s = '') =>
+    String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+
+  const fmtDate = (iso) =>
+    new Date(iso).toLocaleString('pt-BR');
+
+
+  /* ------------------------------------------------------------
+     EXIBIR MENSAGENS NO PAINEL
+     ------------------------------------------------------------ */
+
+  function renderAdmin(filter = '') {
+
+    const cache = StorageApp.read();
+
+    const list = filter
+      ? cache.filter(m =>
+          (m.name + ' ' + m.subject)
+            .toLowerCase()
+            .includes(filter.toLowerCase())
+        )
+      : cache;
+
+    tbody.innerHTML = '';
+
+    if (list.length === 0) {
+
+      tbody.innerHTML = `
+        <tr>
+          <td colspan="7" class="text-center text-muted py-4">
+            Nenhuma mensagem encontrada.
+          </td>
+        </tr>
+      `;
+
+    } else {
+
+      list.forEach((m, i) => {
+
+        const tr = document.createElement('tr');
+
+        tr.innerHTML = `
+          <td>${i + 1}</td>
+
+          <td>${esc(m.name)}</td>
+
+          <td>
+            <a href="mailto:${esc(m.email)}">
+              ${esc(m.email)}
+            </a>
+          </td>
+
+          <td>${esc(m.subject)}</td>
+
+          <td class="text-truncate" title="${esc(m.message)}">
+            ${esc(m.message)}
+          </td>
+
+          <td>
+            <small>${fmtDate(m.date)}</small>
+          </td>
+
+          <td class="text-center text-nowrap">
+
+            <button
+              class="btn btn-sm btn-outline-primary me-1"
+              data-action="edit"
+              data-id="${m.id}"
+              title="Editar mensagem">
+
+              <i class="bi bi-pencil"></i>
+
+            </button>
+
+            <button
+              class="btn btn-sm btn-outline-danger"
+              data-action="delete"
+              data-id="${m.id}"
+              title="Excluir mensagem">
+
+              <i class="bi bi-trash"></i>
+
+            </button>
+
+          </td>
+        `;
+
+        tbody.appendChild(tr);
+
+      });
+
+    }
+
+    counter.textContent = `${list.length} mensagem(ns)`;
+
+  }
+
+
+  /* ------------------------------------------------------------
+     EDITAR E EXCLUIR MENSAGENS
+     ------------------------------------------------------------ */
+
+  tbody.addEventListener('click', (e) => {
+
+    const btn = e.target.closest('button[data-action]');
+
+    if (!btn) return;
+
+    const id = Number(btn.dataset.id);
+
+    if (btn.dataset.action === 'delete') {
+
+      if (confirm('Deseja realmente excluir esta mensagem?')) {
+
+        StorageApp.remove(id);
+
+        renderAdmin(searchInput.value);
+
+      }
+
+    } else if (btn.dataset.action === 'edit') {
+
+      const msg = StorageApp.read().find(m => m.id === id);
+
+      if (!msg) return;
+
+      document.getElementById('editId').value = msg.id;
+      document.getElementById('editName').value = msg.name;
+      document.getElementById('editEmail').value = msg.email;
+      document.getElementById('editSubject').value = msg.subject;
+      document.getElementById('editMessage').value = msg.message;
+
+      editModal.show();
+
+    }
+
+  });
+
+
+  /* ------------------------------------------------------------
+     SALVAR ALTERAÇÕES DE UMA MENSAGEM
+     ------------------------------------------------------------ */
+
+  document.getElementById('saveEditBtn').addEventListener('click', () => {
+
+    const id = Number(document.getElementById('editId').value);
+
+    StorageApp.update(id, {
+
+      name: document.getElementById('editName').value,
+      email: document.getElementById('editEmail').value,
+      subject: document.getElementById('editSubject').value,
+      message: document.getElementById('editMessage').value
+
+    });
+
+    editModal.hide();
+
+    renderAdmin(searchInput.value);
+
+  });
+
+
+  /* ------------------------------------------------------------
+     APAGAR TODAS AS MENSAGENS
+     ------------------------------------------------------------ */
+
+  document.getElementById('clearAllBtn').addEventListener('click', () => {
+
+    if (
+      confirm(
+        'Apagar TODAS as mensagens? Esta ação não pode ser desfeita.'
+      )
+    ) {
+
+      // Apaga os registros sem recriar os 20 registros de teste.
+      StorageApp.removeAll();
+
+      renderAdmin();
+
+    }
+
+  });
+
+
+  /* ------------------------------------------------------------
+     PESQUISAR MENSAGENS
+     ------------------------------------------------------------ */
+
+  searchInput.addEventListener('input', () => {
+
+    renderAdmin(searchInput.value);
+
+  });
+
+
+  /* ------------------------------------------------------------
+     RESTAURAR PAINEL SE A SESSÃO ADMIN ESTIVER ATIVA
+     ------------------------------------------------------------ */
+
+  if (sessionStorage.getItem('admin_auth') === '1') {
+
+    document.getElementById('navbar').style.display = 'none';
+
+    document.querySelectorAll('section:not(#adminArea)')
+      .forEach(s => s.style.display = 'none');
+
+    document.querySelector('footer').style.display = 'none';
+
+    adminArea.classList.add('active');
+
+    renderAdmin();
+
+  }
+
+})();
+</script>
+</body>
+</html>
